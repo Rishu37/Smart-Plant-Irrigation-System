@@ -1,0 +1,33 @@
+Here's a simplified circuit diagram and explanation for the Smart Irrigation System using the listed components:
+
+**Components:**
+- Arduino Uno (1)
+- Moisture Sensor (1)
+- 5V Relay Module (1)
+- 6V Mini Water Pump with Small Pipe (1)
+- Connecting Wires
+- 5V Battery (1)
+
+**Connections:**
+
+1. **Connect the Relay Module:**
+   - VCC of the relay module to the 5V pin of the Arduino.
+   - Ground of the relay to the GND pin of the Arduino.
+   - Connect the signal pin of the relay to any digital pin of the Arduino (except pin 13). Here, it's connected to pin 4.
+
+2. **Connect the Moisture Sensor:**
+   - Connect VCC and GND of the sensor to the 5V and GND pins of the Arduino.
+   - Connect the analog output of the sensor to any analog pin of the Arduino. Here, it's connected to pin A0.
+
+3. **Connect the Water Pump:**
+   - The relay module has three connection points: common, normally closed, and normally open.
+   - Connect the positive terminal of the water pump to the common terminal of the relay.
+   - Connect the normally open pin of the relay to the positive terminal of the battery.
+   - Connect the ground of the water pump to the GND pin of the Arduino.
+   - Connect the small hose to the water pump.
+
+4. **Power the Circuit:**
+   - Use an external battery (9V or 12V) to power the circuit.
+   - Connect the positive terminal of the battery to the VIN pin of the Arduino.
+   - Connect the negative terminal of the battery to the GND pin of the Arduino.
+
